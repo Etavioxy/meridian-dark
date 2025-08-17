@@ -47,13 +47,41 @@
 
 /*
  * ╭─────────────────────────────────────────────────────────╮
+ * │              Hide file explorer nav header              │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+.hide-file-explorer-nav-header-always
+  .workspace-leaf-content[data-type="file-explorer"]
+  .nav-header {
+  display: none;
+}
+
+.hide-file-explorer-nav-header-dynamic
+  .workspace-leaf-content[data-type="file-explorer"]
+  .nav-header {
+  max-height: 0;
+  opacity: 0;
+  transition:
+    opacity 0.3s ease,
+    max-height 0.3s ease;
+}
+
+.hide-file-explorer-nav-header-dynamic
+  .workspace-leaf-content[data-type="file-explorer"]:hover
+  .nav-header {
+  max-height: 2.5em;
+  opacity: 1;
+}
+
+/*
+ * ╭─────────────────────────────────────────────────────────╮
  * │                  Sidebars & Dock Areas                  │
  * ╰─────────────────────────────────────────────────────────╯
 */
 
 /* Hide left/right sidebar toggle buttons */
-.sidebar-toggle-button.mod-right,
-.sidebar-toggle-button.mod-left {
+.hide-sidebar-buttons-always .sidebar-toggle-button.mod-right,
+.hide-sidebar-buttons-always .sidebar-toggle-button.mod-left {
   display: none;
 }
 
@@ -100,11 +128,6 @@
   .nav-header {
   opacity: 1;
   height: 1.75em;
-}
-
-/* Hide file explorer nav header */
-.workspace-leaf-content[data-type="file-explorer"] .nav-header {
-  display: none;
 }
 
 /* Hide local graph tab unless hovered */
