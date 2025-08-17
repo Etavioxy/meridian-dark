@@ -135,9 +135,11 @@ img {
   color: var(--text-faint);
 }
 
-/* ───────────────────────────────────────────────
-   Minimal Image Captions
-─────────────────────────────────────────────── */
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │                 Minimal Image Captions                  │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
 .minimal-image-captions .image-captions-figure {
   background-color: transparent !important;
 }
