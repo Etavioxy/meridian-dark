@@ -314,6 +314,16 @@
   opacity: 1;
 }
 
+/* Hide dock actions */
+.workspace-ribbon .side-dock-actions {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.workspace-ribbon:hover .side-dock-actions {
+  opacity: 1;
+}
+
 /* Hide tag, backlinks, outgoing links, and outline headers unless hovered */
 .workspace-split .workspace-leaf-content[data-type="tag"] .nav-header,
 .workspace-split .workspace-leaf-content[data-type="outgoing-link"] .nav-header,
