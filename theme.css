@@ -306,7 +306,12 @@
 
 /* Hide vault action buttons (help, settings) */
 .workspace-sidedock-vault-profile .workspace-drawer-vault-actions {
-  display: none !important;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.workspace-sidedock-vault-profile:hover .workspace-drawer-vault-actions {
+  opacity: 1;
 }
 
 /* Hide tag, backlinks, outgoing links, and outline headers unless hovered */
@@ -471,15 +476,15 @@ body {
 
 /* Dark theme colors */
 .theme-dark {
-  --background-primary: #111111;
-  --background-secondary: #141414;
+  --background-primary: #1b1b24;
+  --background-secondary: #1e1e29;
   --text-normal: #ccc;
-  --text-muted: #707070;
+  --text-muted: #808080;
 }
 
 /* Ensure fullscreen dark mode uses same primary background */
 .theme-dark.is-fullscreen {
-  --background-primary: #111111;
+  --background-primary: #121218;
 }
 
 /*
