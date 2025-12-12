@@ -36,6 +36,10 @@ Clone this repository into your `.obsidian/themes` directory, or:
 3. Enable the theme in **Settings → Appearance → Themes** (you might need to restart Obsidian).
 4. (Optional) Install the **Style Settings** plugin to access customization options.
 
+```
+git clone https://github.com/Etavioxy/meridian-dark.git --depth 1
+```
+
 ## ✨ Features
 
 > [!IMPORTANT]
